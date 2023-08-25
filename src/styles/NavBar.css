@@ -10,11 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: #323944;
 }
   
 .navbar a {
-    color: black;
+    color: #323944;
     text-decoration: none;
     margin: 20px;
     font-size: 25px;
@@ -35,7 +35,7 @@
     margin-right: 20px;
     background-color: transparent;
     border: none;
-    color: black;
+    color: #323944;
     cursor: pointer;
 }
   

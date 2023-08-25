@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../styles/PortfolioItem.css";
 
-function PortfolioItem({ imageUrl, description }) {
+function PortfolioItem({ imageUrl, title, tag }) {
    
     const [isHovered, setIsHovered] = useState(false);
       
@@ -19,8 +19,13 @@ function PortfolioItem({ imageUrl, description }) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <img src={imageUrl} alt="Image" className="image" />
-            {isHovered && <div className="description">{description}</div>}
+            <img src={imageUrl} alt={title} className="image" />
+            {isHovered && 
+                <div className="description">
+                    <div className='title'> {title} </div>
+                    <div className='tag'> {tag} </div>
+                </div>
+            }
         </div>
     );
 }

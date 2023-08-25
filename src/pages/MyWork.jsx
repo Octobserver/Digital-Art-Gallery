@@ -7,7 +7,7 @@ function MyWork() {
     <div className="projects">
       <h1> Portfolio</h1>
       <div className="artWorkList">
-        <PortfolioItem imageUrl={summer} description="The Watery Summer"/>
+        <PortfolioItem imageUrl={summer} title="The Watery Summer" tag="Still Life"/>
       </div>
     </div>
   );
