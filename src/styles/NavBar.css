@@ -66,16 +66,20 @@
     }
 }
   
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .toggleButton {
       display: flex;
     }
     #close a {
       display: none;
     }
+
+    #close .image-logo {
+      display: none;
+    }
 }
   
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     .toggleButton {
       display: none;
     }
