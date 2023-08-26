@@ -1,20 +1,33 @@
 import React from 'react';
-import {  Box  } from "@chakra-ui/react";
+import { Box, ChakraProvider} from "@chakra-ui/react";
 import PortfolioItem from '../components/PortfolioItem';
 import {PortfolioItemList} from '../helper/PortfolioItemList';
-import '../styles/MyWork.css';
 
 function MyWork() {
   return (
-    <div className="my-work-wrapper">
-      <h1> Portfolio</h1>
+    <ChakraProvider>
+      <Box 
+        paddingBottom={20}
+        paddingTop={20}
+        fontSize="4xl" 
+        alignSelf="center"
+        alignItems="center"
+        w="100%"
+        maxW="1200px"
+        color="#323944"
+      >
+
+        “I never lost sight of what I wanted, which was basically to do the best work I was capable of doing and to spend my life making things.”
+          
+      </Box>
       <Box
         padding={4}
+        alignItems="center"
+        alignSelf="center"
         w="100%"
-        maxW="1000px"
+        maxW="1200px"
         mx="auto"
-        bg="gray.800"
-        sx={{ columnCount: [1, 2, 3], columnGap: "8px" }}
+        sx={{ columnCount: [1, 2, 3], columnGap: "16px" }}
       >
         {PortfolioItemList.map((item, idx) => {
           return (
@@ -22,7 +35,7 @@ function MyWork() {
           );
         })}
       </Box>
-    </div>
+    </ChakraProvider>
   );
 }
 

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {Image, Box} from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
 import "../styles/PortfolioItem.css";
 
 function PortfolioItem({ imageUrl, title, tag }) {
@@ -14,19 +16,31 @@ function PortfolioItem({ imageUrl, title, tag }) {
     };
 
     return (
-        <div
+        <Box
+            alignItems="center"
+            alignSelf="center"
             className="image-container"
+            w="100%"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <img src={imageUrl} alt={title} className="image" />
-            {isHovered && 
-                <div className="description">
-                    <div className='title'> {title} </div>
-                    <div className='tag'> {tag} </div>
-                </div>
-            }
-        </div>
+            <Link to="/details">
+                <Image
+                    key={imageUrl}
+                    w="100%"
+                    objectFit="cover"
+                    d="inline-block"
+                    src={imageUrl}
+                    alt={title}
+                />
+                {isHovered && 
+                    <div className="description">
+                        <div className='title'> {title} </div>
+                        <div className='tag'> {tag} </div>
+                    </div>
+                }
+            </Link>
+        </Box>
     );
 }
 

@@ -19,6 +19,14 @@
     font-size: 25px;
 }
 
+.dropdown {
+  background-color: #F4EEEE;;
+  color: #323944;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
 .image-logo {
   height: 100px;
   width: auto;
@@ -77,6 +85,11 @@
     #close .image-logo {
       display: none;
     }
+
+    #close .dropdown {
+      display: none;
+    }
+
 }
   
 @media only screen and (min-width: 900px) {

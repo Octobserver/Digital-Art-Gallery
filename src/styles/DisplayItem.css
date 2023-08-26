@@ -1,4 +1,4 @@
-.zooming-image-container {
+ .zooming-image-container {
     position: relative;
     width: 100%;
     height: 600px;
@@ -15,7 +15,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 60%;
   }
   
   .popup {
@@ -48,6 +47,10 @@
     padding: 15px 40px;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  #darken {
+    opacity: 80%;
   }
 
   @keyframes move-up {

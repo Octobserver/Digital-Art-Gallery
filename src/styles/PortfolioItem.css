@@ -1,19 +1,11 @@
 .image-container {
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .image {
-    width: 300px;
-    max-height: 500px;
-    object-fit: cover;
-  }
-  
-  .description {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.description {
     position: absolute;
     top: 50%;
     left: 50%;

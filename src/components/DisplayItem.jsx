@@ -24,7 +24,7 @@ function DisplayItem({ imageUrl, buttonText, popupText }) {
       className={`zooming-image-container ${isZoomed ? 'zoomed' : ''}`}
       onMouseEnter={handleMouseEnter}
     >
-      <img src={imageUrl} alt={buttonText} className="image-display" />
+      <img src={imageUrl} alt={buttonText} className='image-display' id={isHovered ? "darken" : "normal"}/>
       {isHovered &&
         <div className="popup">
          <p className="popup-text">{popupText}</p>

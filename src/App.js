@@ -7,6 +7,7 @@ import MyWork from './pages/MyWork';
 import Shop from './pages/Shop';
 import Blog from './pages/Blog';
 import DailyChallenge from './pages/DailyChallenge';
+import PortfolioItemDetails from './pages/PortfolioItemDetails';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path='/shop' element={<Shop />}/>
           <Route path='/blog' element={<Blog />}/>
           <Route path='/daily-challenge' element={<DailyChallenge />}/>
+          {/* dummy */}
+          <Route path="/details" element={<PortfolioItemDetails />} />
         </Routes>
         <Footer />
       </Router>
