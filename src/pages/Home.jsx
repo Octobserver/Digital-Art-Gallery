@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className='home'>
       <div className='display'>
-        <DisplayItem imageUrl={summer} buttonText='About Me' popupText="Hi! This is Octavia!"/>
+        <DisplayItem imageUrl={summer} buttonText='ABOUT ME' popupText="Hi! This is Octavia!"/>
       </div>
     </div>
   );
