@@ -40,7 +40,7 @@ function NavBar() {
               </MenuButton>
               <MenuList className="dropdown" zIndex={1}>
                 <MenuItem border={0}> 
-                  <Link to='/shop'>Commission</Link>
+                  <Link to='/commission'>Commission</Link>
                 </MenuItem>
                 <MenuItem border={0}> 
                   <Link to='/shop'>Prints</Link>

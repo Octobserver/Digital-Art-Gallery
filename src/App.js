@@ -8,6 +8,7 @@ import Shop from './pages/Shop';
 import Blog from './pages/Blog';
 import DailyChallenge from './pages/DailyChallenge';
 import PortfolioItemDetails from './pages/PortfolioItemDetails';
+import Commission from './pages/Commission';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
           <Route path='/shop' element={<Shop />}/>
           <Route path='/blog' element={<Blog />}/>
           <Route path='/daily-challenge' element={<DailyChallenge />}/>
-          {/* dummy */}
-          <Route path="/details" element={<PortfolioItemDetails />} />
+          <Route path="/details/:title" element={<PortfolioItemDetails />} />
+          <Route path='/commission' element={<Commission />}/>
         </Routes>
         <Footer />
       </Router>

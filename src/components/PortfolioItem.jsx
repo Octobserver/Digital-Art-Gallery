@@ -24,7 +24,7 @@ function PortfolioItem({ imageUrl, title, tag }) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Link to="/details">
+            <Link to={`/details/${title}`}>
                 <Image
                     key={imageUrl}
                     w="100%"
