@@ -1,0 +1,59 @@
+ .zooming-image-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #323944;
+  }
+  
+  .zoomed .image-display {
+    transition: transform 10s;
+    transform: scale(1.2);
+  }
+  
+  .image-display {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .popup {
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+    animation-name: move-up;
+    animation-duration: 1s;
+  }
+  
+  .popup-text {
+    color: #F4EEEE;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .popup-button {
+    background-color: #F4EEEE;
+    color: #323944;
+    font-size: 15px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #darken {
+    opacity: 80%;
+  }
+
+  @keyframes move-up {
+    from   {top:0%;}
+    to  {top:-50%;}
+  }
