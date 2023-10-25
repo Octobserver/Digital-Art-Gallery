@@ -1,6 +1,6 @@
 # Digital Art Gallery
 
-###About
+### About
 
 A sample online artist's gallery. Implement features for displaying different types of artwork, blogs, and tutorials, sharing content on social media, purchasing prints, and sending commission requests.
 
